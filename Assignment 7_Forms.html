@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 7</title>
+  </head>
+  <body>
+    <form action="http://www.example.com/review.php" method="GET">
+      <fieldset>
+        <legend>Your Details:</legend>
+        <label>
+          Name:
+          <input type="text" name="Name" size="30" maxlength="100" />
+        </label>
+        <p>
+          <label>
+            Email:
+            <input type="email" name="Email" size="30" maxlength="100" />
+          </label>
+        </p>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Your Review:</legend>
+        <p>
+          <label for="hear_about"> How did you hear about us? </label>
+          <select name="Referer" id="hear_about">
+            <option value="google">Google</option>
+            <option value="friend">Friend</option>
+            <option value="advertise">Advertisement</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+        <p>
+          Would you visit again?
+          <br />
+
+          <input type="radio" name="Visit_again" id="yes" />
+          <label for="yes"> Yes </label>
+          <input type="radio" name="Visit_again" id="no" />
+          <label for="no"> No </label>
+          <input type="radio" name="Visit_again" id="maybe" />
+          <label for="maybe"> May be </label>
+        </p>
+        <p>
+          <label for="comments"> Comments:  </label>
+          <br />
+          <textarea name="Comments" id="comments" cols="30" rows="4">
+          </textarea>
+        </p>
+        <input
+          type="checkbox"
+          name="Email"
+          id="email_update"
+          checked="checked"
+        />
+        <label for="email_update"> Sign me up for email update </label>
+        <br />
+        <input type="submit" value="Submit review" />
+      </fieldset>
+    </form>
+  </body>
+</html>
